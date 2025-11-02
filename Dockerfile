@@ -8,7 +8,7 @@ WORKDIR /server
 COPY package.json ./
 
 # Install all dependencies using npm
-RUN npm install --legacy-peer-deps
+RUN yarn install
 
 # Copy source code
 COPY . .
